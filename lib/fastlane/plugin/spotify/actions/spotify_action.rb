@@ -2,7 +2,7 @@ module Fastlane
   module Actions
     class SpotifyAction < Action
       def self.run(params)
-        spotify = File.join(`bundle show fastlane-plugin-spotify`.chomp, 'script', 'shpotify', 'spotify')
+        spotify = File.join(`bundle show fastlane-plugin-spotify`.chomp, 'bin', 'spotify')
 
         if params[:spotify_song]
           play = params[:spotify_song]
